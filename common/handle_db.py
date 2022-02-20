@@ -19,14 +19,28 @@ class DB:
         self.cur = self.con.cursor()
 
     def find_data(self, sql):
+        """
+        查询 SQL 数据
+        :param sql:
+        :return:
+        """
         self.cur.execute(sql)
         res = self.cur.fetchall()
         return res
 
     def updata_data(self, sql):
+        """
+        修改 SQL 语句
+        :param sql:
+        :return:
+        """
         self.cur.execute(sql)
         self.con.commit()
 
     def close_data(self):
+        """
+        关闭资源
+        :return:
+        """
         self.cur.close()
         self.con.close()

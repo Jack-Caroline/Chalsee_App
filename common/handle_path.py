@@ -13,9 +13,6 @@ CASEDATAS_DIR = os.path.join(BASE_DIR, "casedatas")
 # 获取公共方法的根目录
 COMMON_DIR = os.path.join(BASE_DIR, "common")
 
-# 获取配置文件根目录
-CONF_DIR = os.path.join(BASE_DIR, "conf")
-
 # 获取定位文件的根目录
 LOCATOR_DIR = os.path.join(BASE_DIR, "locator")
 
